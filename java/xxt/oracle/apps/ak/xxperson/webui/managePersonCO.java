@@ -4,7 +4,7 @@
  +===========================================================================+
  |  HISTORY                                                                  |
  +===========================================================================*/
-// 11/30/2022 change 1
+// 11/30/2022 change 2
 package xxt.oracle.apps.ak.xxperson.webui;
 
 import oracle.apps.fnd.common.VersionInfo;
