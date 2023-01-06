@@ -1,5 +1,5 @@
 -- 1/3/2023 change 
---XXHR_BI6PUB_REP_PKG.pkb added on 9/20/2022 
+--XXHR_BI6PUB_REP_PKG.pkb added on 1/6/23 
 CREATE OR REPLACE PACKAGE BODY APPS.xxhr_bipub_rep_pkg IS
 
   PROCEDURE generate_xml( p_errbuf  OUT VARCHAR2
