@@ -1,0 +1,72 @@
+testName: EBS Smoke Test
+description: E-Business Suite ATS Smoke tests
+workflow:
+  name: OATS-runScript
+  inputs:
+  - code: OATS_SCRIPT_PROJECT_FILE
+    groovy: true
+    value: '"F:\\ats\\Scripts\\ebsloadscript\\*.jwg"'
+  - code: ARGS
+    groovy: true
+    value: '" -browser.type FireFox"'
+  - code: TEST_INSTANCE
+    groovy: false
+    value: OATS01
+tags: "OATS"
+filters:
+- type: env
+  value: TEST
+- type: targetGroup
+  value: EBS
+---
+testName: EBS Functional Test
+description: E-Business Suite ATS Functional tests
+workflow:
+  name: OATS-runScript
+  inputs:
+  - code: ARGS
+    groovy: true
+    value: ''
+  - code: OATS_SCRIPT_PROJECT_FILE
+    groovy: true
+    value: '"F:\\ats\\Scripts\\ebsscript\\ebsscript.jwg"'
+  - code: TEST_INSTANCE
+    groovy: false
+    value: OATS01
+tags: "OATS"
+filters:
+- type: env
+  value: TEST
+- type: targetGroup
+  value: EBS
+---
+testName: utplsql test
+description: utplsql testcases for EBS packages
+workflow:
+  name: Execute utPLSQL Test
+tags: "UTPLSQL"
+filters:
+- type: env
+  value: TEST
+---
+testName: AccelQ Functional Test
+description: AccelQ Functional Test
+# Optionally apply filters to control when this test executes
+# The filter below would only execute this test if the deploy target environment code is DEV 
+# filters: 
+#  - type: env
+#    value: DEV
+workflow:
+  name: AccelQTest
+  inputs:
+     # (Optional) AccelQ Job Id
+    - code: JOB_ID
+      groovy: false
+      value: 16626
+    - code: TEST_INSTANCE
+      groovy: false
+      value: OATS01
+tags: "ACCELQ"
+filters:
+- type: env
+  value: TEST
