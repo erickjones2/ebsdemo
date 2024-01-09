@@ -16,8 +16,6 @@ tags: "OATS"
 filters:
 - type: env
   value: TEST
-- type: targetGroup
-  value: EBS
 ---
 testName: EBS Functional Test
 description: E-Business Suite ATS Functional tests
@@ -37,8 +35,6 @@ tags: "OATS"
 filters:
 - type: env
   value: TEST
-- type: targetGroup
-  value: EBS
 ---
 testName: utplsql test
 description: utplsql testcases for EBS packages
