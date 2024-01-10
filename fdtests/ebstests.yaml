@@ -43,7 +43,7 @@ workflow:
 tags: "UTPLSQL"
 filters:
 - type: env
-  value: TEST1
+  value: TEST
 ---
 testName: AccelQ Functional Test
 description: AccelQ Functional Test
@@ -65,4 +65,4 @@ workflow:
 tags: "ACCELQ"
 filters:
 - type: env
-  value: TEST1
+  value: TEST
