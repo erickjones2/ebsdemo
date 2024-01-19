@@ -31,7 +31,7 @@ workflow:
   - code: TEST_INSTANCE
     groovy: false
     value: OATS01
-tags: "OATS"
+tags: "OATS2"
 filters:
 - type: env
   value: TEST
