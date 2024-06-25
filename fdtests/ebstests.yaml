@@ -95,7 +95,7 @@ workflow:
       value:    
     - code: TT_INP_RESULT_FILE_PATH
       value: 
-  tags: "TOSCA"
-  filters:
-   - type: env
-     value: TEST
+tags: "TOSCA"
+filters:
+  - type: env
+    value: TEST
