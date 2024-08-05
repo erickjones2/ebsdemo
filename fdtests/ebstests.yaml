@@ -47,11 +47,6 @@ filters:
 ---
 testName: AccelQ Functional Test
 description: AccelQ Functional Test
-# Optionally apply filters to control when this test executes
-# The filter below would only execute this test if the deploy target environment code is DEV 
-# filters: 
-#  - type: env
-#    value: DEV
 workflow:
   name: AccelQTest
   inputs:
