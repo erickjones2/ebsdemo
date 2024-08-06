@@ -56,7 +56,7 @@ workflow:
       value: 435244
     - code: TEST_INSTANCE
       groovy: false
-      value: OATS01
+      value: ACCELQ
 tags: "ACCELQ"
 filters:
 - type: env
