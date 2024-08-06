@@ -48,10 +48,10 @@ filters:
 testName: AccelQ Functional Test
 description: AccelQ Functional Test
 workflow:
-  name: AccelQTest
+  name: ACCELQ-runACCELQTests
   inputs:
      # (Optional) AccelQ Job Id
-    - code: JOB_ID
+    - code: FDACLQ_INP_CI_JOB_ID
       groovy: false
       value: 435244
     - code: TEST_INSTANCE
