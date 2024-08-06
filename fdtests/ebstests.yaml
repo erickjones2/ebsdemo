@@ -51,7 +51,7 @@ workflow:
   name: ACCELQ-runACCELQTests
   inputs:
      # (Optional) AccelQ Job Id
-    - code: FDACLQ_INP_CI_JOB_ID
+    - code: ACLQ_INP_CI_JOB_ID
       groovy: false
       value: 435244
     - code: TEST_INSTANCE
