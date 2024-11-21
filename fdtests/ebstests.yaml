@@ -94,3 +94,25 @@ tags: "TOSCA"
 filters:
   - type: env
     value: TEST
+---
+testName: E-Business Suite Test Demo
+description: EBS Demo Opkey Test
+tags: "OPKEY"
+workflow:
+  name: OpKey-runTests
+  inputs:
+    - code: OPKEY_PROJECT_NAME
+      value: Flexagon
+    - code: OPKEY_SUITE_PATH
+      value: "Project Workspace/EBS 12.2.12/EBS Validate"
+    - code: OPKEY_MODULE
+      value: suite
+    - code: OPKEY_PLUGIN
+      value: "Opkey OracleEBS"
+    - code: OPKEY_AGENT
+      value: utlwt01
+filters:
+- type: env
+  value: TEST
+- type: pkg
+  value: ALLIED-1
