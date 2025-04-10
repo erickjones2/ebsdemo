@@ -1,4 +1,4 @@
--- 04/4/2025 change 7
+-- 04/4/2025 change 8
 --XXHR_BI6PUB_REP_PKG.pkb added on 9/20/2022 
 CREATE OR REPLACE PACKAGE BODY APPS.xxhr_bipub_rep_pkg IS
 
