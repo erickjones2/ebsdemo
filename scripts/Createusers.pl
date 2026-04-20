@@ -1,4 +1,4 @@
-######################### print on failure 123.
+######################### print on failure.
 
 BEGIN { $| = 1; }
 END {print "ERROR: System NOT Loaded\n" unless $loaded;}
